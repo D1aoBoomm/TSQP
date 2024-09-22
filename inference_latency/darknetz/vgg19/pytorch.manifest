@@ -1,0 +1,91 @@
+[loader]
+entrypoint = "file:/usr/lib/x86_64-linux-gnu/gramine/libsysdb.so"
+log_level = "error"
+insecure__use_cmdline_argv = true
+
+[loader.env]
+LD_LIBRARY_PATH = "/lib:/usr/lib:/lib/x86_64-linux-gnu:/usr//lib/x86_64-linux-gnu"
+HOME = "/home/xgj"
+OMP_NUM_THREADS = "8"
+
+[libos]
+entrypoint = "/home/xgj/anaconda3/bin/python3.11"
+
+[[fs.mounts]]
+path = "/home/xgj/anaconda3/bin/python3.11"
+uri = "file:/home/xgj/anaconda3/bin/python3.11"
+
+[[fs.mounts]]
+path = "/lib"
+uri = "file:/usr/lib/x86_64-linux-gnu/gramine/runtime/glibc"
+
+[[fs.mounts]]
+path = "/home/xgj/anaconda3/lib"
+uri = "file:/home/xgj/anaconda3/lib"
+
+[[fs.mounts]]
+path = "/usr/lib"
+uri = "file:/usr/lib"
+
+[[fs.mounts]]
+path = "/lib/x86_64-linux-gnu"
+uri = "file:/lib/x86_64-linux-gnu"
+
+[[fs.mounts]]
+path = "/usr//lib/x86_64-linux-gnu"
+uri = "file:/usr//lib/x86_64-linux-gnu"
+
+[[fs.mounts]]
+path = "/home/xgj/anaconda3/lib/python3.11"
+uri = "file:/home/xgj/anaconda3/lib/python3.11"
+
+[[fs.mounts]]
+path = "/home/xgj/anaconda3/lib/python3.11/lib-dynload"
+uri = "file:/home/xgj/anaconda3/lib/python3.11/lib-dynload"
+
+[[fs.mounts]]
+path = "/home/xgj/anaconda3/lib/python3.11/site-packages"
+uri = "file:/home/xgj/anaconda3/lib/python3.11/site-packages"
+
+[[fs.mounts]]
+type = "tmpfs"
+path = "/tmp"
+
+[sgx]
+enclave_size = "4G"
+max_threads = 32
+edmm_enable = false
+trusted_files = [
+    { uri = "file:/home/xgj/anaconda3/bin/python3.11" },
+    { uri = "file:/usr/lib/x86_64-linux-gnu/gramine/libsysdb.so" },
+    { uri = "file:/usr/lib/x86_64-linux-gnu/gramine/runtime/glibc/" },
+    { uri = "file:/usr/lib/" },
+    { uri = "file:/lib/x86_64-linux-gnu/" },
+    { uri = "file:/usr//lib/x86_64-linux-gnu/" },
+    { uri = "file:/home/xgj/anaconda3/lib/" },
+    { uri = "file:/home/xgj/anaconda3/lib/python3.11/" },
+    { uri = "file:/home/xgj/anaconda3/lib/python3.11/lib-dynload/" },
+    { uri = "file:/home/xgj/anaconda3/lib/python3.11/site-packages/" },
+    { uri = "file:client.py" },
+    { uri = "file:msg.proto" },
+    { uri = "file:msg_pb2_grpc.py" },
+    { uri = "file:msg_pb2.py" },
+]
+allowed_files = [
+    "file:result.txt",
+    "file:client.py",
+    "file:msg.proto",
+    "file:msg_pb2_grpc.py",
+    "file:msg_pb2.py",
+]
+isvprodid = 0
+isvsvn = 0
+remote_attestation = "none"
+debug = false
+require_avx = false
+require_avx512 = false
+require_mpx = false
+require_pkru = false
+require_amx = false
+require_exinfo = false
+enable_stats = false

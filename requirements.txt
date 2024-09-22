@@ -1,0 +1,9 @@
+grpcio==1.63.0
+numpy==1.23.0
+Pillow==10.3.0
+pretrainedmodels==0.7.4
+protobuf==3.19.1
+setuptools==69.5.1
+torch==2.1.0+cu121
+torchvision==0.16.2+cu118
+tqdm==4.66.4
