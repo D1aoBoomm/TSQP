@@ -1,4 +1,4 @@
-# "TSQP: Safeguarding Real-Time Inference for Quantization Neural Networks on Edge Devices (S&P 2025)"
+# "TSQP: Safeguarding Real-Time Inference for Quantization Neural Networks on Edge Devices"
 
 The code for implementing the ***TSQP: Safeguarding Real-Time Inference for Quantization Neural Networks on Edge Devices***.
 
