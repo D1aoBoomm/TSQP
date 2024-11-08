@@ -51,6 +51,7 @@ class ResNet18(torch.nn.Module):
                     op(x) # warmup
                 
                 start = time.time()
+                torch.quantize_per_tensor(torch.rand(getattr(self, 'x{}'.format(i))),scale = 0.0472, zero_point = 64, dtype=torch.quint8)
                 op(x)
                 stop = time.time()
                 
