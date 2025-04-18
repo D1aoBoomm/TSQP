@@ -139,5 +139,17 @@ Please refer to the [Official Code](https://github.com/tribhuvanesh/knockoffnets
 
 This is not the full and secure version, and it should not be used in any real production environments. To support real edge device, we are working on a full version with OP-TEE. It's coming soon...
 
+## Citation
+```
+@inproceedings{sun2024tsqp,
+  title={TSQP: Safeguarding Real-Time Inference for Quantization Neural Networks on Edge Devices},
+  author={Sun, Yu and Xiong, Gaojian and Liu, Jianhua and Liu, Zheng and Cui, Jian},
+  booktitle={2025 IEEE Symposium on Security and Privacy (SP)},
+  pages={1--1},
+  year={2024},
+  organization={IEEE Computer Society}
+}
+```
+
 ## License
 This project is released under the MIT License.
