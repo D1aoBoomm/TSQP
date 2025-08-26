@@ -141,13 +141,13 @@ This is not the full and secure version, and it should not be used in any real p
 
 ## Citation
 ```
-@inproceedings{sun2024tsqp,
+@inproceedings{sun2025tsqp,
   title={TSQP: Safeguarding Real-Time Inference for Quantization Neural Networks on Edge Devices},
   author={Sun, Yu and Xiong, Gaojian and Liu, Jianhua and Liu, Zheng and Cui, Jian},
   booktitle={2025 IEEE Symposium on Security and Privacy (SP)},
-  pages={1--1},
-  year={2024},
-  organization={IEEE Computer Society}
+  pages={2114--2132},
+  year={2025},
+  organization={IEEE}
 }
 ```
 
